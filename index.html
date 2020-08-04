@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <button onclick="change()" style="width: 200px; height: 60px;">Change</button>
+    <script>
+        function change() { // (string)=>
+            window.observer.setState = [true, false, null][Math.floor(Math.random() * 3)]
+        }
+    </script>
+    <script src="script.js" buttonColor="red" position="bottom-right"
+        domain="https://chatwidget.helpdeskeddy.com/ru/omnichannel/chat"
+        svgIcon="https://svgsilh.com/svg_v2/1801287.svg" widgetState="widgetState">
+        </script>
+</body>
+
+</html>
